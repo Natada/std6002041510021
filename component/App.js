@@ -7,7 +7,7 @@ class App extends React.Component {
         return (
             //component about react native
             <View>
-                <Text>Hello World!!</Text>
+                <Text>Hello Natada!!</Text>
             </View>
 
         );
