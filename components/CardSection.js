@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Image} from 'react-native';
 
 class CardSection extends Component {
     render() {
         return (
             <View>
-                <Text>XXXX</Text>
+                {this.props.children}
             </View>
         );
     }
