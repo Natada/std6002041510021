@@ -8,10 +8,20 @@ class App extends React.Component {
         return (
             <View>
                 <Header title = {"Albums"}></Header>
-                <Text>Natada Yasamud</Text>
+                <View style={{alignItems: 'center'}}>
+                    <Text style={styles.text}>Natada Yasamud No.6002041510021</Text>
+                </View>
                 <Card />
             </View>
         );
+    }
+}
+
+const styles = {
+    text: {
+        fontSize: 15,
+        justifyContent: 'center', 
+        alignItems: 'center',
     }
 }
 
