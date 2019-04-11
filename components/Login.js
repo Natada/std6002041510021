@@ -5,6 +5,9 @@ import axios from 'axios';
 
 //write component
 class Login extends Component {
+    static navigationOptions = {
+        title: 'profile',
+    }
     constructor() {
         super()
         this.state = {
@@ -12,6 +15,10 @@ class Login extends Component {
             password: ''
         }
         //this.onChangeEmail = this.onChangeEmail.bind(this)
+    }
+    componentDidMount() {
+        const {navigate} = this.props.navigation;
+        return navigate('Profile')
     }
     onChangeEmail(e) {
         console.log('onChangeEmail', e)
@@ -30,6 +37,7 @@ class Login extends Component {
             })
     }
     render() {
+        const {navigate} = this.props.navigation;
         return (
             <View>
                 <TextInput
