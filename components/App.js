@@ -1,27 +1,22 @@
-import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+// import library
+import React from 'react';
+import { View, Text } from 'react-native';
 import Header from './Header';
 import Card from './Card';
 import Login from './Login';
-import Profile from './Profile';
 
+// write component
 class App extends React.Component {
     render() {
         return (
+            //component about react native
             <View>
-                <Header title = "Profile"></Header>
-                <Profile />
+                <Header title="Login" />
+                <Login />
             </View>
         );
     }
 }
 
-const styles = {
-    text: {
-        fontSize: 20,
-        justifyContent: 'center', 
-        alignItems: 'center',
-    }
-}
-
+// export 
 export default App;
